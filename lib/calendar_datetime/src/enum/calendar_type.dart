@@ -1,0 +1,4 @@
+enum CalendarDateTimePickerType {
+  date,
+  dateAndTime,
+}
