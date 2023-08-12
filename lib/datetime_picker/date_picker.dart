@@ -13,7 +13,7 @@ class DatePicker {
     DateCancelledCallback? onCancel,
     locale = LocaleType.en,
     DateTime? currentTime,
-    DatePickerTheme? theme,
+        MyDatePickerTheme? theme,
   }) async {
     return await Navigator.push(
       context,
@@ -46,7 +46,7 @@ class DatePicker {
     DateCancelledCallback? onCancel,
     locale = LocaleType.en,
     BasePickerModel? pickerModel,
-    DatePickerTheme? theme,
+        MyDatePickerTheme? theme,
   }) async {
     return await Navigator.push(
       context,

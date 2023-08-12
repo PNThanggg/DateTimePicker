@@ -1,4 +1,4 @@
-package com.example.demo
+package com.pnt.datetime_picker
 
 import io.flutter.embedding.android.FlutterActivity
 

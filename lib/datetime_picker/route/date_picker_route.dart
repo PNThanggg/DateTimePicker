@@ -8,13 +8,13 @@ class DatePickerRoute<T> extends PopupRoute<T> {
     this.onChanged,
     this.onConfirm,
     this.onCancel,
-    DatePickerTheme? theme,
+    MyDatePickerTheme? theme,
     this.barrierLabel,
     this.locale,
     RouteSettings? settings,
     BasePickerModel? pickerModel,
   })  : pickerModel = pickerModel ?? DatePickerModel(),
-        theme = theme ?? const DatePickerTheme(),
+        theme = theme ?? const MyDatePickerTheme(),
         super(settings: settings);
 
   final bool? showTitleActions;
@@ -22,7 +22,7 @@ class DatePickerRoute<T> extends PopupRoute<T> {
   final DateChangedCallback? onConfirm;
   final DateCancelledCallback? onCancel;
   final LocaleType? locale;
-  final DatePickerTheme theme;
+  final MyDatePickerTheme theme;
   final BasePickerModel pickerModel;
 
   @override

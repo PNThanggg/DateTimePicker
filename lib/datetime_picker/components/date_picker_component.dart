@@ -44,7 +44,7 @@ class _DatePickerState extends State<DatePickerComponent> {
 
   @override
   Widget build(BuildContext context) {
-    DatePickerTheme theme = widget.route.theme;
+    MyDatePickerTheme theme = widget.route.theme;
 
     return GestureDetector(
       child: AnimatedBuilder(
@@ -79,7 +79,7 @@ class _DatePickerState extends State<DatePickerComponent> {
     }
   }
 
-  Widget _renderPickerView(DatePickerTheme theme) {
+  Widget _renderPickerView(MyDatePickerTheme theme) {
     Widget itemView = _renderItemView(theme);
 
     if (widget.route.showTitleActions == true) {
@@ -95,7 +95,7 @@ class _DatePickerState extends State<DatePickerComponent> {
 
   Widget _renderColumnView({
     ValueKey? key,
-    required DatePickerTheme theme,
+    required MyDatePickerTheme theme,
     required StringAtIndexCallBack stringAtIndexCB,
     required ScrollController scrollController,
     required int layoutProportion,
@@ -151,7 +151,7 @@ class _DatePickerState extends State<DatePickerComponent> {
     );
   }
 
-  Widget _renderItemView(DatePickerTheme theme) {
+  Widget _renderItemView(MyDatePickerTheme theme) {
     return Container(
       color: theme.backgroundColor,
       child: Directionality(
@@ -241,7 +241,7 @@ class _DatePickerState extends State<DatePickerComponent> {
   }
 
   // Title View
-  Widget _renderTitleActionsView(DatePickerTheme theme) {
+  Widget _renderTitleActionsView(MyDatePickerTheme theme) {
     final done = _localeDone();
     final cancel = _localeCancel();
 
@@ -311,7 +311,7 @@ class _BottomPickerLayout extends SingleChildLayoutDelegate {
 
   final double progress;
   final bool? showTitleActions;
-  final DatePickerTheme theme;
+  final MyDatePickerTheme theme;
   final double bottomPadding;
 
   @override
